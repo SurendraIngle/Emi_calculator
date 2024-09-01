@@ -1,0 +1,53 @@
+.loan-summary {
+  background-color: #FAF3F0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin-left: 20px;
+  
+}
+.loan-summary-container1{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px;
+}
+.loan-summary-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.loan-summary-item-square {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.loan-summary-item-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4F4F4F;
+}
+
+.loan-summary-item-amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.emi-banner {
+            background-color: #fef3c7;  /* Light yellow background */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+}
+.emi-text {
+            color: #1e40af;  /* Dark blue text */
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+}

@@ -1,0 +1,50 @@
+.range-slider {
+  width: 100%;
+  padding: 20px;
+}
+
+.range-slider__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.range-slider__label {
+  font-weight: bold;
+}
+
+.range-slider__input {
+  padding: 8px;
+  width: 120px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: right;
+  margin-right: 20%;
+}
+
+.range-slider__container {
+  width: 80%;
+  position: relative;
+}
+
+.range-slider__value {
+  position: absolute;
+  top: -35px;
+  transform: translateX(-50%);
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.range-slider__slider {
+  width: 100%;
+}
+
+.range-slider__limits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
