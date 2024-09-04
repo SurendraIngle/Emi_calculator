@@ -17,35 +17,45 @@ const EMIFormContainer = () => {
   };
 
   const renderSelectedForm = () => {
+
     switch (selectedForm) {
       case "personal":
         return <PersonalEMIForm onCalculateEmi={setLoanDetails} 
         loanDetails={loanDetails} 
-        onUpdate={handleLoanDetailsUpdate}/>;
+        onUpdate={handleLoanDetailsUpdate}
+        />;
       case "home":
-        return <HomeEMIForm onCalculateEmi={setLoanDetails} 
-        loanDetails={loanDetails} 
-        onUpdate={handleLoanDetailsUpdate}/>;
+        return (
+          <HomeEMIForm
+            onCalculateEmi={setLoanDetails}
+            loanDetails={loanDetails}
+            onUpdate={handleLoanDetailsUpdate}
+          />
+        );
       case "car":
-        return <CarEMIForm onCalculateEmi={setLoanDetails} 
-        loanDetails={loanDetails} 
-        onUpdate={handleLoanDetailsUpdate}/>;
+        return (
+          <CarEMIForm
+            onCalculateEmi={setLoanDetails}
+            loanDetails={loanDetails}
+            onUpdate={handleLoanDetailsUpdate}
+          />
+        );
       default:
         return <div>Select a form</div>;
     }
   };
 
-  return (
-    <div>
-      <div className="tabs">
-      <Tabs
-        labels={["personal", "home", "car"]}
-        onTabChange={handleTabChange}
-      />
-      </div>
-      <div style={{ marginTop: "20px" }}>{renderSelectedForm()}</div>
-    </div>
-  );
+ return (
+   <div>
+     <div className="tabs">
+       <Tabs
+         labels={["personal", "home", "car"]}
+         onTabChange={handleTabChange}
+       />
+     </div>
+     <div style={{ marginTop: "20px" }}>{renderSelectedForm()}</div>
+   </div>
+ );
 };
 
 export default EMIFormContainer;

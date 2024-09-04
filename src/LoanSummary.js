@@ -2,16 +2,6 @@ import React from "react";
 import "./LoanSummary.css";
 
 const LoanSummary = ({summaryData,summaryData1,emi}) => {
-  // const summaryData = [
-  //   { label: "Principal amount", amount: "₹20,00,000", color: "#8B0000" }, // Dark Red
-  //   { label: "Interest amount", amount: "₹96,054", color: "#FFA500" }, // Orange
-  //   { label: "Total amount payable", amount: "₹20,96,054", color: "#2F4F4F" }, // Dark Slate Gray
-  // ];
-  // const summaryData1 = [
-  //   { label: "Principal amount1", amount: "₹20,00,000", color: "#8B0000" }, // Dark Red
-  //   { label: "Interest amount1", amount: "₹96,054", color: "#FFA500" }, // Orange
-  //   { label: "Total amount payable1", amount: "₹20,96,054", color: "#2F4F4F" }, // Dark Slate Gray
-  // ];
 
   return (
     <div className="loan-summary">
@@ -46,7 +36,7 @@ const LoanSummary = ({summaryData,summaryData1,emi}) => {
         </div>
       </div>
       <div class="emi-banner">
-        <p class="emi-text">Your Monthly EMI is ₹{emi}</p>
+        <p class="emi-text">{emi!==null?`Your Monthly EMI is ₹${emi}`:""}</p>
       </div>
     </div>
   );
